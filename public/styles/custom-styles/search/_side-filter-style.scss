@@ -1,0 +1,30 @@
+.filter-categories {
+  margin-bottom: 1rem;
+  .filter-category-title {
+    // background-color: $primary;
+    color: #fff;
+    padding: 0.3rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+    .filter-title {
+      color: #fff;
+    }
+  }
+  .category-list {
+    margin-top: 5%;
+  }
+  .divider {
+    border: 1px solid #cfcfcf;
+  }
+}
+
+.filter-tag {
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 5px;
+  margin: 0.1rem 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #255da3;
+  background-color: #fff;
+}

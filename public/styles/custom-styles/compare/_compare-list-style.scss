@@ -1,0 +1,16 @@
+.confirmation-button {
+  position: fixed;
+  right: 0px;
+  border: none;
+  border-radius: unset;
+  height: 40px;
+  font-weight: 600;
+  font-size: larger;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1000;
+  @include laptop {
+    bottom: 0px;
+    width: 40%;
+  }
+}

@@ -1,0 +1,56 @@
+//
+// general.scss
+//
+
+body {
+    font-family: $font-family-secondary;
+    overflow-x: hidden !important;
+    font-size: $font-size-base;
+    color: $black;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-family-base;
+    line-height: 1.5;
+    font-weight: 600;
+}
+::selection {
+    background: lighten($primary, 5%);
+    color: $white;
+}
+a {
+    text-decoration: none !important;
+}
+p {
+    line-height: 1.6;
+}
+
+//institute details
+.institute-details{
+    h1{
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .about {
+        h1{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        h2{
+          font-size: 20px;
+          font-weight: 700;
+        }
+        h3{
+          font-size: 18px;
+          font-weight: 700;
+        }
+        h4{
+          font-size: 15px;
+          font-weight: 700;
+        }
+        h5{
+          font-size: 10px;
+          font-weight: 700;
+        }
+    }
+  }

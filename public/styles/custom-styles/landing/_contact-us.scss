@@ -1,0 +1,16 @@
+.connect-us-row {
+  .button-group {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.contact-us-row {
+  .button-group {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+     @include phone {
+       justify-content: space-around;
+     }
+  }
+}

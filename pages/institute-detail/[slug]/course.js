@@ -1,0 +1,37 @@
+import React from "react";
+import APIServices from "src/apiUtils/APIServices";
+
+import UniversityCourse from "src/pages/University/UniversityCourse";
+
+const InstituteCoursePage = (props) => <UniversityCourse {...props} />;
+export default InstituteCoursePage;
+
+export const getStaticPaths = async (_) => {
+  const { data, success } = await new APIServices(
+    "/faceted-search/?size=20/"
+  ).post({});
+
+  let paths = [
+    {
+      params: { slug: "" },
+    },
+  ];
+  if (success)
+    paths = data?.hits?.hits?.map(({ _source: { institute_slug } }) => ({
+      params: { slug: institute_slug },
+    }));
+
+  return { paths, fallback: true };
+};
+
+export const getStaticProps = async ({ params: { slug } }) => {
+  const { data, success } = await new APIServices(
+    `institute-details/${slug}/`
+  ).get();
+  return {
+    props: {
+      data: success ? data?.data : {},
+    },
+    revalidate: 300,
+  };
+};

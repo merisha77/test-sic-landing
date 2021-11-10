@@ -1,0 +1,119 @@
+.qck-fct-wrapper {
+  color: #05293c;
+  margin: auto;
+  line-height: 1.5em;
+  @include phone {
+    padding: 5px;
+  }
+  .qck-fct-content {
+    background-color: #fff;
+    border: 0;
+    width: 98%;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 25px 0px rgba(63, 92, 110, 0.33);
+
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 1.5rem;
+    @include phone {
+      padding: 0.5rem;
+    }
+    top: -60px;
+    .qck-fct {
+      display: inherit;
+      .icon {
+        color: $primary;
+      }
+      .fct-label-container {
+        margin: 0px 1%;
+        .fct-title {
+          @include phone {
+            font-size: .9rem;
+            line-height: 1.5rem;
+          }
+          font-size: 1.5rem;
+          line-height: 2rem;
+          font-weight: 700;
+          color: $secondary;
+        }
+        .fct-label {
+          color: #b8c6ce;
+        }
+      }
+    }
+  }
+}
+@include laptop {
+  .qck-fct-wrapper .qck-fct-content {
+    position: absolute;
+    .qck-fct {
+      width: 20%;
+    }
+  }
+}
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 65px;
+}
+
+@include phone-to-tablet {
+  .title-wrapper {
+    margin-top: 1.4rem;
+    h2 {
+      font-size: large;
+      margin: 0;
+    }
+  }
+}
+
+.course-recommend {
+  .placeholder {
+    height: 110px !important;
+    max-height: 110px;
+    width: 100%;
+  }
+  img {
+    width: auto;
+    height: 110px;
+    margin: auto;
+    padding: 1rem;
+    max-height: 110px;
+  }
+
+  .card {
+    height: 100%;
+  }
+  .card-body {
+    h5 {
+      font-size: 1rem;
+    }
+  }
+  hr {
+    width: 100%;
+  }
+  @include phone {
+    margin-bottom: 1rem;
+    a {
+      width: 100%;
+    }
+    hr {
+    }
+    .card {
+      width: 100%;
+      max-height: 360px;
+    }
+    .card-body {
+      max-width: 100%;
+      min-height: unset;
+
+      // maxWidth: isMobile ? "80%" : "",
+      // padding: isMobile ? "0" : ""
+    }
+  }
+}
+
+.course-detail-title{
+  font-size: 20px;
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: 008
+Disallow: /
+
+Sitemap: https://studyinfocentre.com/sitemap.xml

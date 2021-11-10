@@ -1,0 +1,38 @@
+.category-card {
+  padding-left: 1px;
+  padding-right: 1px;
+  border: 5px solid #fff;
+  width: 50%;
+  &-wrapper {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    .icon {
+      height: 60px;
+      width: 60px;
+      font-size:50px;
+      color:$primary;
+    }
+    .content {
+      text-align: center;
+      h4.title {
+        font-weight: 300;
+      }
+    }
+  }
+  @include laptop {
+    width: 20%;
+  }
+  @include tablet {
+    width: 33%;
+  }
+  &:hover{
+    .icon {
+      height: 60px;
+      width: 60px;
+      font-size:50px;
+      color:$secondary;
+    }
+    
+  }
+}

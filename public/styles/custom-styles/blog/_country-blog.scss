@@ -1,0 +1,58 @@
+.step-nav-wrapper {
+  height: 120px;
+  padding: 10px 0px;
+  .step-nav {
+    justify-content: space-between;
+    &-left {
+      float: left;
+    }
+    &-right {
+      float: right;
+      flex-direction: row-reverse;
+    }
+    &-left,
+    &-right {
+      .icon {
+        display: inherit;
+        align-items: center;
+      }
+      .nav-wrapper {
+        width: 8rem;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        .step {
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          width: 50px;
+          margin: auto;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.ant-steps {
+  &-item-finish,
+  &-item-process {
+    .ant-steps-item-container {
+      color: $primary;
+      .ant-steps-item-tail::after {
+        background-color: $primary;
+      }
+      .ant-steps-item-icon {
+        .ant-steps-icon {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.author-detail {
+  @include phone {
+   font-size: 14px;
+  }
+}

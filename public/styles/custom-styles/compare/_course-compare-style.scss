@@ -1,0 +1,117 @@
+.compare_section {
+  text-align: left;
+  color: $primary;
+  font-size: 13px;
+  line-height: 1.2;
+  @include phone {
+    padding: 50px 0px;
+    table {
+      width: 100%;
+      min-width: unset !important;
+      overflow: scroll !important;
+      td {
+        min-width: 100px;
+      }
+
+      th {
+        border: 1px solid #ddd;
+        position: sticky;
+        left: 0px;
+        min-width: 100px;
+        padding: 7px;
+        z-index: 1;
+      }
+    }
+  }
+  padding: 50px 30px;
+  background-color: $white;
+  .table-responsive {
+    table {
+      min-width: 767px;
+      table-layout: fixed;
+      width: 100%;
+      background-color: $white;
+      overflow: hidden;
+      box-shadow: 0 2px 20px -2px $primary;
+      tr {
+        height: 53px;
+        .course-head {
+          @include phone {
+            width: 140px;
+            max-width: 140px;
+          }
+        }
+        th {
+          &:first-child {
+            color: $white;
+            background-color: $primary;
+            border-color: $white;
+            text-align: left;
+          }
+          padding: 10px;
+          &.TblInfo {
+            background-color: $secondary;
+            border: 1px solid $white;
+            color: $white;
+            width: 215px;
+            h3 {
+              font-size: 21px;
+              font-weight: 700;
+              color: $white;
+            }
+            @include phone {
+              width: 100px;
+              h3 {
+                font-size: 1.2rem;
+              }
+            }
+          }
+
+          &.bg-blue {
+            color: $white;
+            font-size: 16px;
+            font-weight: 600;
+            vertical-align: sub;
+            span {
+              font-size: 12px;
+              display: block;
+            }
+          }
+        }
+        td {
+          &.bg-red {
+            background-color: $secondary;
+            padding: 10px;
+            border: 1px solid $white;
+            color: $white;
+          }
+          empty-cells: show;
+          text-align: center;
+          border: 1px solid #ddd;
+          padding: 10px;
+          &.txt-l {
+            font-size: 14px;
+            font-weight: 500;
+          }
+          &.sep {
+            text-align: left;
+            display: table-cell !important;
+            width: 215px;
+            color: $white;
+            font-weight: 600;
+            font-size: 18px;
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+  .pdfBtn {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .remove-ico {
+    padding: 10px;
+  }
+}

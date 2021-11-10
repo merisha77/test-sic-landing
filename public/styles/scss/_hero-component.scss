@@ -1,0 +1,29 @@
+@import "public/styles/scss/mixins.scss";
+
+.rounded-select {
+  .ant-select-selector {
+    border-radius: 10px !important;
+  }
+}
+@include phone-to-tablet {
+  .counter-wrapper {
+    flex-wrap: nowrap;
+    .text-secondary,
+    .counter-value,
+    .counter-head {
+      font-size: medium;
+    }
+  }
+}
+
+.custom-input {
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.scroll-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+

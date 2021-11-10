@@ -1,0 +1,76 @@
+/*
+*
+* ==========================================
+* Loading Screen
+* ==========================================
+*
+*/
+
+.custom-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 3999;
+  background: #fff;
+  justify-content: center;
+
+  .loader {
+    // background-color: #fff;
+    position: absolute;
+    border: 5px solid #cfcfcf;
+    border-radius: 50%;
+    border-top: 5px solid $primary;
+    border-right: 5px solid $light;
+    border-bottom: 5px solid $secondary;
+    width: 150px;
+    height: 150px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  img {
+    z-index: 1;
+    width: 120px;
+    padding: 2px;
+  }
+  .loader-2 {
+    @extend .loader;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin2 2s linear infinite;
+    animation: spin2 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      background-color: #fff;
+    }
+    25% {
+      // background-color: $primary;
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+      background-color: #fff;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      background-color: #fff;
+    }
+    25% {
+      // background-color: $primary;
+    }
+
+    100% {
+      background-color: #fff;
+      transform: rotate(360deg);
+    }
+  }
+}

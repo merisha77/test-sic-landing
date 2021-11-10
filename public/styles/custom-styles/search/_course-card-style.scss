@@ -1,0 +1,153 @@
+.course-card {
+  background-color: #fff;
+  padding: 1%;
+  margin-bottom: 2rem;
+  @include phone {
+    margin-left: 0;
+    overflow: hidden;
+  }
+  .featured {
+    font-weight: bolder;
+    position: absolute;
+    @include phone {
+      font-size: 12px;
+      z-index: 10;
+      right: 0;
+      top: -5px;
+      position: relative;
+    }
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+  .logo-wrapper {
+    width: 15%;
+    img {
+      height: fit-content;
+      width: inherit;
+      padding: 1%;
+      // img {
+      width: 100%;
+      height: auto;
+      // }
+    }
+  }
+  .uni-name {
+    @include phone {
+      font-size: 15px;
+    }
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .lh-content {
+    padding: 1% 1%;
+    width: 100%;
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      color: #3a3a3a;
+      font-family: inherit;
+    }
+    .price-dtl {
+      @include laptop {
+        display: flex;
+      }
+      .d-lg-none {
+        padding: 0 0.3rem;
+      }
+      justify-content: space-between;
+      font-weight: 600;
+      .fee {
+        font-size: 1rem;
+        color: #28407c;
+        float: left;
+      }
+      .duration {
+        font-size: 14px;
+        color: #8e8e8e;
+        white-space: nowrap;
+      }
+      .wishlist {
+        text-align: center;
+        @include phone {
+          margin: 0.5rem 0 !important;
+        }
+      }
+    }
+  }
+}
+.box-shadow {
+  box-shadow: 0px 0px 5px #cfcfcf;
+}
+.box-shadow-active {
+  box-shadow: 0px 0px 30px #cfcfcf;
+}
+.course-url a {
+  color: #1c599f !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+.small-course-card {
+  background-color: #fff;
+  padding: 1%;
+  margin-bottom: 2rem;
+  @include phone {
+    margin-left: 0;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #1c599f;
+  }
+  .logo-wrapper {
+    width: 20%;
+    .img {
+      height: fit-content;
+      width: inherit;
+      height: inherit;
+      padding: 1%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .uni-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .lh-content {
+    padding: 1% 3%;
+    width: 100%;
+    p {
+      font-size: 12px;
+      line-height: 14px;
+      color: #3a3a3a;
+      font-family: inherit;
+    }
+    .price-dtl {
+      @include laptop {
+        display: flex;
+      }
+
+      justify-content: space-around;
+      font-weight: 600;
+      .fee {
+        font-size: 16px;
+        color: #28407c;
+        float: left;
+      }
+      .duration {
+        font-size: 12px;
+        float: left;
+        margin-left: 15px;
+        margin-top: 10px;
+        color: #8e8e8e;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.filter-card {
+  width: 100%;
+}
